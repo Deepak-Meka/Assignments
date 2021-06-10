@@ -1,0 +1,21 @@
+table{
+    border: 0.09cm solid black;
+    width: 8cm;
+}
+tr,td{
+    border: 0.09cm solid black ;
+    width: 8cm;
+}
+#enter{
+    padding: 45px,32px;
+    border: none;
+}
+button{
+    padding: 15px 38px;
+    border:solid black;
+    width: 100%;
+    background-color: rgb(201, 235, 10);
+}
+button:hover,button:active{
+    background-color: rgb(247, 8, 8);
+}
