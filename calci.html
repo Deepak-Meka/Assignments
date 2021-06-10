@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calci
+        </title>
+        <link href='../css/calci.css' rel='stylesheet'>
+        <script src="../js/calci.js"></script>
+    </head>
+    <body>
+        <table align='center'>
+               <tr>
+                   <td colspan="3"><input id='enter' placeholder='ENTER'></td>
+                   <td id='clr'><button onclick="clr()">clear</button></td>
+               </tr>
+               <tr>
+                   <td><button onclick="number('1')">1</button></td>
+                   <td><button onclick="number('2')">2</button></td>
+                   <td><button onclick="number('3')">3</button></td>
+                   <td><button onclick="number('/')">/</button></td>
+               </tr>
+               <tr>
+                   <td><button onclick="number('4')">4</button></td>
+                   <td><button onclick="number('5')">5 </button></td>
+                   <td><button onclick="number('6')">6</button></td>
+                   <td><button onclick="number('+')">+</button></td>
+               </tr>
+               <tr>
+                <td><button onclick="number('7')">7</button></td>
+                <td><button onclick="number('8')">8</button> </td>
+                <td><button onclick="number('9')">9</button></td>
+                <td><button onclick="number('-')">-</button></td>
+               </tr>
+               <tr>
+                <td><button onclick="number('.')">.</button></td>
+                <td><button onclick="number('0')">0</button> </td>
+                <td><button onclick="result()">=</button></td>
+                <td><button onclick="number('*')">*</button></td>
+               </tr>
+        </table>
+    </body>
+</html>
