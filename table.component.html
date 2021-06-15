@@ -1,0 +1,16 @@
+<p>table works!</p>
+<table border='13' align="center" appDirect> Creating the Table
+<tr>
+    <td>id</td>
+    <td>Name</td>
+    <td>Gender</td>
+    <td>Address</td>
+</tr>
+<tr *ngFor='let d of data'>
+    <td>{{d.id}}</td>
+    <td>{{d.name|uppercase}}</td>
+    <td>{{d.Gender}}</td>
+    <td>{{d.city}}</td>
+</tr>
+
+</table>
