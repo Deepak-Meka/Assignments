@@ -1,0 +1,35 @@
+<pre align='center'>
+    Search:<input type="text" [(ngModel)]="nameUsingSearch">
+   
+    <!-- sort:<select [(ngModel)]='sort'>
+        <option>prodName</option>
+        <option>ProdPrice</option>
+    </select> -->
+</pre>
+<table  border="1" width='500'  align='center' appTableDir>
+ <fieldset>
+     <legend align='center'>Bike Info</legend>
+    
+<tr>
+    <th>ProductId</th>
+    <th>ProductName</th>
+    <th>ProductPrice</th>
+    <th>ProductExpiry</th>
+    <th>Image</th>
+</tr>
+<tr *ngFor="let i of (info | tablePip : nameUsingSearch| searchPip )">
+    <td height='100'>{{i.id}}</td>
+    <td height='100'>{{i.name}}</td>
+    <td height='100'>{{i.price}}</td>
+    <td height='100'>{{i.MyDate| date}}</td>
+    <td height='100'><img [src]=i.myImage width='100px' height=100px></td>
+</tr>
+<!-- <tr *ngFor="let i of (info | searchPip : sort)">
+    <td height='100'>{{i.id}}</td>
+    <td height='100'>{{i.name}}</td>
+    <td height='100'>{{i.price}}</td>
+    <td height='100'>{{i.MyDate| date}}</td>
+    <td height='100'><img [src]=i.myImage width='100px' height=100px></td>
+</tr> -->
+</fieldset>
+</table>
